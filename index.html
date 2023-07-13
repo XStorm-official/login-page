@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Connexion futuriste</title>
+    <style> 
+      /* Styles pour la section de connexion */
+      .login-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('image-informatique.jpg');
+        background-size: cover;
+      }
+      
+      .login-form {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #cccccc;
+        text-align: center;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        background-color: #f1f1f1;
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        background-color: #87CEEB;
+        color: #ffffff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #00008B;
+      }
+      
+      /* Styles pour le bouton "Mot de passe oublié" */
+      .forgot-password {
+        margin-top: 20px;
+        text-decoration: none;
+        color: #00008B;
+        font-size: 12px;
+        transition: color 0.3s ease;
+      }
+      
+      .forgot-password:hover {
+        color: #87CEEB;
+      }
+      
+      /* Styles pour le lien "S'inscrire" */
+      .signup {
+        margin-top: 20px;
+        text-decoration: none;
+        color: #00008B;
+        font-size: 12px;
+        transition: color 0.3s ease;
+      }
+      
+      .signup:hover {
+        color: #87CEEB;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="login-section">
+      <form class="login-form">
+        <h2>Connexion</h2>
+        <div class="form-group">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <input type="submit" value="Se connecter">
+          <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+          <a href="#" class="signup">S'inscrire</a>
+        </form>
+      </section>
+    </body>
+  </html>
